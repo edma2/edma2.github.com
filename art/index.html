@@ -10,8 +10,8 @@ title: Art
   {% for post in site.posts %}
     {% if post.type == 'art' %}
       <li>
-        <a href="{{ post.image }}" rel="lightbox">
-          <img height=50 width=50 src="{{ post.image }}" />
+        <a href="{{ post.image }}" rel="lightbox" title="{{ post.title }}">
+            <img height=50 width=50 src="{{ post.image }}"/>
         <a/>
       </li>
       <br/>
