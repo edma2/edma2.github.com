@@ -7,13 +7,11 @@ title: Art Portfolio
 <link href="/style/lightbox2/css/lightbox.css" rel="stylesheet" />
 
 <ul class="thumbnails">
-  {% for post in site.posts %}
-    {% if post.type == 'art' %}
-        <li class="span2">
-          <a class="thumbnail" href="{{ post.image }}" rel="lightbox" title="{{ post.title }}">
-              <img src="{{ post.image }}"/>
-          <a/>
-        </li>
-    {% endif %}
+  {% for post in site.categories.art %}
+    <li class="span2">
+      <a class="thumbnail" href="{{ post.image }}" rel="lightbox" title="{{ post.title }}">
+          <img src="{{ post.image }}"/>
+      <a/>
+    </li>
   {% endfor %}
 </ul>
