@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog_post
 title: The Unknown
 category: blog
 ---
