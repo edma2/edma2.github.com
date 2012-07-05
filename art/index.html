@@ -1,0 +1,16 @@
+---
+layout: default
+title: Art
+---
+<ul>
+  {% for post in site.posts %}
+    {% if post.type == 'art' %}
+      <li>
+        <a href="{{ post.url }}">
+          <img height=50 width=50 src="{{ post.image }}" />
+        <a/>
+      </li>
+      <br/>
+    {% endif %}
+  {% endfor %}
+</ul>
