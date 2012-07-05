@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Art
+title: Art Portfolio
 ---
 <script src="/style/lightbox2/js/jquery-1.7.2.min.js"></script>
 <script src="/style/lightbox2/js/lightbox.js"></script>
 <link href="/style/lightbox2/css/lightbox.css" rel="stylesheet" />
 
-<ul>
+<ul class="thumbnails">
   {% for post in site.posts %}
     {% if post.type == 'art' %}
-      <li>
-        <a href="{{ post.image }}" rel="lightbox" title="{{ post.title }}">
-            <img height=50 width=50 src="{{ post.image }}"/>
-        <a/>
-      </li>
-      <br/>
+        <li class="span3">
+          <a class="thumbnail" href="{{ post.image }}" rel="lightbox" title="{{ post.title }}">
+              <img src="{{ post.image }}"/>
+          <a/>
+        </li>
+        </br>
     {% endif %}
   {% endfor %}
 </ul>
