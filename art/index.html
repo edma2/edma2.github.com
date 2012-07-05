@@ -9,12 +9,11 @@ title: Art Portfolio
 <ul class="thumbnails">
   {% for post in site.posts %}
     {% if post.type == 'art' %}
-        <li class="span3">
+        <li class="span2">
           <a class="thumbnail" href="{{ post.image }}" rel="lightbox" title="{{ post.title }}">
               <img src="{{ post.image }}"/>
           <a/>
         </li>
-        </br>
     {% endif %}
   {% endfor %}
 </ul>
